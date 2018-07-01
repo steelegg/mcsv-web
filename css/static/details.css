@@ -1,0 +1,130 @@
+.center-right {
+    background: #f1f1f1;
+    float: left;
+    height: 1000px;
+}
+
+.image-width {
+    min-width: 160px;
+    max-width: 203px;
+    height: 92px;
+}
+
+.dropdown {
+    position: absolute;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+/*楼层头像*/
+.head-img-div{
+    height: 78px;
+    width: 78px;
+    margin-right: 10px;
+    border: 1px #dee2e6 solid;
+}
+.user-name-div{
+    width: 78px;
+    text-align: center;
+    font-size: 12px;
+    padding: 3px 0;
+}
+.head-img {
+    height: 70px;
+    min-width: 70px;
+    margin:3px;
+    /*margin-right: 10px;*/
+}
+.vip-icon-div {
+    height: 20px;
+    width: 78px;
+}
+
+
+.shadow {
+    background: rgba(0, 0, 0, .1);
+}
+
+#content > img {
+    max-width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.div-reply-icon, .comment-item {
+    color: #4e555b;
+    font-size: 14px;
+}
+
+.reply-icon {
+    width: 60px;
+    display: flex;
+    cursor:pointer;
+}
+
+.show-icon {
+    width: 60px;
+    display: flex;
+    cursor:pointer;
+}
+
+.reply-icon > a, .reply-icon > p {
+    display: none;
+}
+
+.reply-icon > a, .show-icon > a {
+    text-decoration: none;
+    color: #4e555b;
+}
+
+/*回复头像*/
+.reply-item-body{
+    background: #f2f2f2;
+    padding: 10px;
+}
+.reply-user-img-div{
+    height:36px;
+    width: 36px;
+    padding: 1px;
+    border: 1px #dee2e6 solid;
+    margin: 0 10px 10px 0;
+}
+.reply-user-img{
+    height:32px;
+    width: 32px;
+}
+.reply-content{
+    font-size: 14px;
+}
+
+.reply-more-div{
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.col-md-9 {
+    min-width: 510px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MCSVER</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/static/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/static/public.css" type="text/css" rel="stylesheet"/>
+    <script src="./js/static/jquery.min.js"></script>
+    <script src="./js/static/popper.min.js"></script>
+    <script src="./js/static/bootstrap.min.js"></script>
+    <style>
+        .center-right {
+            background: #f1f1f1;
+            float: left;
+            height: 1000px;
+        }
+
+        .image-width {
+            min-width: 160px;
+            max-width: 203px;
+            height: 92px;
+        }
+
+        .dropdown {
+            position: absolute;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        .col-md-9 {
+            min-width: 510px;
+        }
+    </style>
+    <script>
+        $(function () {
+            if ($(window).width() < 768){
+                $("#center-right").css("display", "none");
+            }
+        });
+        //窗口大小监听
+        $(window).resize(function () {
+            var width = $(this).width();
+            var height = $(this).height();
+            if (width < 768) {
+                $("#center-right").css("display", "none");
+            } else {
+                $("#center-right").css("display", "block");
+            }
+        });
+    </script>
+</head>
+<body style="background: #f1f1f1">
+<div class="container">
+    <nav class="navbar navbar-expand-sm navbar-light box-shadow" style="background: #FFF;min-width: 510px">
+        <!--<nav class="navbar navbar-expand-md bg-dark navbar-dark">-->
+        <a class="navbar-brand" href="#">MCSV</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar" style="justify-content: space-between;">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown" style=" position: relative;">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        服务器
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" style="padding:.5rem .2rem" href="#">登录</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="padding:.5rem .2rem" href="#">注册</a>
+                </li>
+                <img class="img-thumbnail" style="height: 40px;width: 40px" src="image/lufei.jpg"/>
+            </ul>
+        </div>
+    </nav>
+    <div class="br"></div>
+    <div class="center">
+        <div class="col-md-9" style="background: #F1F1F1;float: left">
+            <div class="w-100 box-shadow navigation-div">
+                <a href="">首页</a><a href="">>服务器</a><a href="">>列表</a>
+            </div>
+            <div class="br"></div>
+            <div class="media col-md-12 box-shadow d-flex flex-column" style="height:84px;min-width: 510px">
+                <div class="media float-left w-100" style="height:50px;background: #FFFFFF">
+                    <div class="d-flex flex-column h-100" style="min-width:90px;justify-content: center;">
+                       <span class="box-shadow"
+                             style="margin-left: 10px;margin-right: 10px;color: #FFF;background: #fbca1e;padding: 0 2px">版主置顶</span>
+                    </div>
+                    <div class="d-flex flex-column h-100 title-hidden"
+                         style="justify-content: center;padding:10px 10px 0 0; ">
+                        <span class="h-100" style="overflow: hidden;text-overflow: ellipsis;">服务器MOD：侏罗纪时代，真实畜牧，四季温度，镇守府，家具，神秘时代6，沉浸工程，自定义npc（有脚本）</span>
+                    </div>
+                </div>
+                <div class="w-100 " style="padding:10px">
+                    <div class="d-flex flex-row float-right" style="width: 220px;">
+                        <div class="count-icon d-flex" style="padding: 0 5px">
+                            <img style="height:18px;width: 18px;" src="image/icon/icon-praise.png"/>
+                            <i style="float: left">100K</i>
+                        </div>
+                        <div class="count-icon d-flex float-left" style="padding: 0 5px">
+                            <img style="height:18px;width: 18px;" src="image/icon/icon-collection.png"/>
+                            <i style="float: left">100K</i>
+                        </div>
+                        <div class="count-icon d-flex" style="padding: 0 5px">
+                            <img style="height:18px;width: 18px;" src="image/icon/icon-info.png"/>
+                            <i style="float: left">100K</i>
+                        </div>
+                        <div class="dropdown count-icon d-flex"
+                             style="height:24px;width: 35px;padding: 2px 7px;right: 10px;">
+                            <img class="dropdown-toggle" style="height:20px;width: 20px;"
+                                 src="image/icon/icon-down-arrow.png" data-toggle="dropdown"/>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="br"></div>
+
+            <div class="media col-md-12 box-shadow d-flex flex-column" style="height:190px ;min-width: 510px">
+                <div class="media float-left w-100" style="height:50px;background: #FFFFFF">
+                    <div class="d-flex flex-column h-100"
+                         style="min-width:46px;margin-right:10px;justify-content: center;">
+                        <span class="box-shadow"
+                              style="margin-left: 10px;color: #FFF;background: #1b58fb;padding: 0 2px;">置顶</span>
+                    </div>
+                    <div class="d-flex flex-column h-100 title-hidden"
+                         style="justify-content: center;padding:10px 10px 0 0; ">
+                        <span class="h-100" style="overflow: hidden;text-overflow: ellipsis;">服务器MOD：侏罗纪时代，真实畜牧，四季温度，镇守府，家具，神秘时代6，沉浸工程，自定义npc（有脚本）</span>
+                    </div>
+                </div>
+                <div class="media float-left w-100" style="background: #FFF;padding: 10px;height: 64%;">
+                    <img class="image-width" src="./image/long.jpg">
+                    <p class="hidden-text" style="padding-left:10px;max-width: 406px;height:92px;">
+                        服务器群号：602849339
+                        服务器最大在线人数：15
+                        服务器网络类型：三线
+                        服务器运行时间：5,8至今
+                        服务器MOD：侏罗纪时代，真实畜牧，四季温度，镇守府，家具，神秘时代6，沉浸工程，自定义npc（有脚本）
+                        服务器插件：脚本方块（用来做有趣的侏罗纪公园副本和农场），基础插件，全球市场（挂售你的商品）</p>
+                </div>
+                <div class="w-100 " style="padding:10px">
+                    <div class="d-flex flex-row float-right" style="width: 220px;">
+                        <div class="count-icon d-flex" style="padding: 0 5px">
+                            <img style="height:18px;width: 18px;" src="image/icon/icon-praise.png"/>
+                            <i style="float: left">100K</i>
+                        </div>
+                        <div class="count-icon d-flex float-left" style="padding: 0 5px">
+                            <img style="height:18px;width: 18px;" src="image/icon/icon-collection.png"/>
+                            <i style="float: left">100K</i>
+                        </div>
+                        <div class="count-icon d-flex" style="padding: 0 5px">
+                            <img style="height:18px;width: 18px;" src="image/icon/icon-info.png"/>
+                            <i style="float: left">100K</i>
+                        </div>
+                        <div class="dropdown count-icon d-flex"
+                             style="height:24px;width: 35px;padding: 2px 7px;right: 10px;">
+                            <img class="dropdown-toggle" style="height:20px;width: 20px;"
+                                 src="image/icon/icon-down-arrow.png" data-toggle="dropdown"/>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="br"></div>
+
+            <div class="media col-md-12 box-shadow d-flex flex-column" style="height:190px ;min-width: 510px">
+                <div class="media float-left w-100" style="height:50px;background: #FFFFFF">
+                    <div class="d-flex flex-column h-100"
+                         style="min-width:46px;margin-right:10px;justify-content: center;">
+                        <span class="box-shadow"
+                              style="margin-left: 10px;color: #FFF;background: #1b58fb;padding: 0 2px;">置顶</span>
+                    </div>
+                    <div class="d-flex flex-column h-100 title-hidden"
+                         style="justify-content: center;padding:10px 10px 0 0; ">
+                        <span class="h-100" style="overflow: hidden;text-overflow: ellipsis;">『冰柠檬』新服开荒=神秘_植物魔法_魔法艺术_工业拔刀_暮色豆腐</span>
+                    </div>
+                </div>
+                <div class="media float-left w-100" style="background: #FFF;padding: 10px;height: 64%;">
+                    <img class="image-width" src="./image/ltss.jpg">
+                    <img class="image-width" src="./image/xlt.jpg">
+                    <img class="image-width" src="./image/long.jpg">
+                </div>
+                <div class="w-100 " style="padding:10px">
+                    <div class="d-flex flex-row float-right" style="width: 220px;">
+                        <div class="count-icon d-flex" style="padding: 0 5px">
+                            <img style="height:18px;width: 18px;" src="image/icon/icon-praise.png"/>
+                            <i style="float: left">100K</i>
+                        </div>
+                        <div class="count-icon d-flex float-left" style="padding: 0 5px">
+                            <img style="height:18px;width: 18px;" src="image/icon/icon-collection.png"/>
+                            <i style="float: left">100K</i>
+                        </div>
+                        <div class="count-icon d-flex" style="padding: 0 5px">
+                            <img style="height:18px;width: 18px;" src="image/icon/icon-info.png"/>
+                            <i style="float: left">100K</i>
+                        </div>
+                        <div class="dropdown count-icon d-flex"
+                             style="height:24px;width: 35px;padding: 2px 7px;right: 10px;">
+                            <img class="dropdown-toggle" style="height:20px;width: 20px;"
+                                 src="image/icon/icon-down-arrow.png" data-toggle="dropdown"/>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="center-right" class="col-md-3 center-right">
+            <div class="h-100" style="background: #f1f1f1;float: left;width: 5%"></div>
+            <div class="h-100 box-shadow" style="background: #FFF;float: left;width: 95%">
+
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="footer col-md-12" style="margin-top: 10px;height: 1000px;">
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

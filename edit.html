@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>wangEditor demo</title>
+    <link href="./css/static/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <script src="./js/static/jquery.min.js"></script>
+    <script src="./js/static/popper.min.js"></script>
+    <script src="./js/static/bootstrap.min.js"></script>
+    <link href="css/static/public.css" type="text/css" rel="stylesheet"/>
+
+    <!--富文本-->
+    <link rel="stylesheet" type="text/css" href="./css/edit/simditor.css"/>
+    <script type="text/javascript" src="./js/edit/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/edit/module.js"></script>
+    <script type="text/javascript" src="./js/edit/hotkeys.js"></script>
+    <script type="text/javascript" src="./js/edit/uploader.js"></script>
+    <script type="text/javascript" src="./js/edit/simditor.js"></script>
+    <style>
+        #editor>img{
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-expand-sm navbar-light box-shadow" style="background: #FFF;min-width: 510px">
+        <a class="navbar-brand" href="#">MCSV</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar" style="justify-content: space-between;">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown" style=" position: relative;">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        服务器
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" style="padding:.5rem .2rem" href="#">登录</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="padding:.5rem .2rem" href="#">注册</a>
+                </li>
+                <img class="img-thumbnail" style="height: 40px;width: 40px" src="image/lufei.jpg"/>
+            </ul>
+        </div>
+    </nav>
+    <div class="br"></div>
+    <div class="box-shadow col-md-12">
+        <textarea id="editor" placeholder="来改变世界吧!" autofocus></textarea>
+    </div>
+    <div class="br"></div>
+    <div class="col-md-12" style="height: 40px;">
+        <div class="button box-shadow" style="height:40px;width:100px;" onclick="get()">
+            <p>取消</p>
+        </div>
+        <div class="button box-shadow" style="height:40px;width:100px;" onclick="get()">
+            <p>提交</p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="./js/edit/init.edit.js"></script>
+</body>
+</html>
